@@ -25,7 +25,8 @@ Para executar os testes, já com o ambiente configurado, execute
  - ``yarn test`` 
 
 ## Pontos de melhorias ou não finalizados:
-Alguns pontos de melhoria que podiam ser implementados ou melhorados no projeto
+Alguns pontos de melhoria que podiam ser implementados ou melhorados no projeto.
 - Adição testes unitátios para garantir a estabilidade do código.
-- Com o docker criado, adicionar uma linha CI/CD do GitHub actions
+- Com o docker criado, adicionar uma linha CI/CD do GitHub actions.
 - Melhoria da documentaçãO utilizando o Gitpod para teste do projeto e código em nuvem.
+- Melhorias de desing e responsividade.
