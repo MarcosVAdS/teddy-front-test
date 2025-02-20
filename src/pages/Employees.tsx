@@ -30,9 +30,11 @@ const Employees = () => {
     return (
         <div className="min-w-dvw min-h-dvh">
             <NavBar/>
-            <div className="">
-                <EmployeesList employees={employees}/>
-                <div className="mt-5 justify-self-stretch">
+            <div className="grid grid-rows-2 place-items-center gap-4 px-64">
+                <div className='w-full py-4'>
+                    <EmployeesList employees={employees}/>
+                </div>
+                <div className="w-full py-4">
                     <button type="button" onClick={() => modal!.openModal!(EmployeeForm, {})} 
                         className="rounded-s-sm bg-transparent cursor-pointer border-orange-500 border-4 w-full h-14">Criar cliente
                     </button>

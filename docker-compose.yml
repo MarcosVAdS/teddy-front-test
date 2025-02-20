@@ -1,0 +1,22 @@
+services:
+  front-end-service:
+    container_name: front-end-container
+    build:
+        context: .
+        dockerfile: Dockerfile
+    volumes:
+      - ..:/project:cached
+    env_file:
+      - .env
+    restart:
+      unless-stopped
+    networks:
+      - developer
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_HOST=0.0.0.0 
+
+networks:
+  developer:
+    external: true
